@@ -1,0 +1,6 @@
+id: "project-unique-id"
+name: "Test-Project-Name"
+labels:
+   values:
+     app: flyte
+description: "Some description for the project."

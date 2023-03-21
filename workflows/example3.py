@@ -5,7 +5,6 @@ from flytekit import task, workflow
 
 @task
 def get_data() -> int:
-    """Get the wine dataset."""
     print("Getting data")
     return 1
 
@@ -21,7 +20,7 @@ def train_model(y: int) -> int:
 
 @workflow
 def training_workflow() -> int:
-    # print("Starting workflow")
+    print("Starting workflow")
     x = get_data()
     y = process_data(x=x)
     return train_model(y=y)
